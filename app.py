@@ -40,8 +40,8 @@ def predict():
             prediction = 'Cat 🐱' if pred > 0.5 else 'Dog 🐶'
 
 
-            # Optional: remove uploaded image after prediction
-            # os.remove(filepath)
+            # remove uploaded image after prediction
+            os.remove(filepath)
 
     return render_template('project.html', prediction=prediction)
 
